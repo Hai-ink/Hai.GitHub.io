@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hai Ink - Tattoo Studio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #f2f2f2;
+    }
+
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      letter-spacing: 3px;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: crimson;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      border: 2px solid #444;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    h2 {
+      border-bottom: 2px solid crimson;
+      padding-bottom: 5px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hai Ink</h1>
+    <p>"Ink with Serenity"</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Welcome to Hai Ink, where creativity meets precision. I'm Henry Armani Idieho, a passionate tattoo artist based in Auchi. With every design, I strive to bring out your story and identity through bold, meaningful ink.</p>
+    <p>A good tattoo artist understands not just art, but people. It’s about detail, trust, and connection — crafting pieces that last forever and feel personal.</p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="tattoo1.jpeg" alt="Tattoo design 1">
+      <img src="tattoo2.jpeg" alt="Tattoo design 2">
+      <img src="tattoo3.jpeg" alt="Tattoo design 3">
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Location: Auchi</p>
+    <p>Email: <a href="mailto:idiehohenry@gmail.com" style="color:crimson;">idiehohenry@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/2347060903704" style="color:crimson;">07060903704</a></p>
+    <p>Call: <a href="tel:+2349151457877" style="color:crimson;">09151457877</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Hai Ink — All rights reserved.<br>
+    CEO: Henry Armani Idieho
+  </footer>
+
+</body>
+</html>
