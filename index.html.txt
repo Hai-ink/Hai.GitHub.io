@@ -2,128 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hai Ink - Tattoo Studio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #f2f2f2;
-    }
-
-    header {
-      background-color: #000;
-      text-align: center;
-      padding: 30px 20px;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-      letter-spacing: 3px;
-    }
-
-    header p {
-      font-style: italic;
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
-    nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    nav a {
-      color: #f2f2f2;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: crimson;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-
-    .gallery img {
-      width: 250px;
-      border: 2px solid #444;
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: #000;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-
-    h2 {
-      border-bottom: 2px solid crimson;
-      padding-bottom: 5px;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
+    :root { --accent:#66ffcc; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#111; color:#fff; }
+    header { text-align:center; padding:28px 16px; background:#000; }
+    .logo { display:block; margin:0 auto 10px; width:200px; max-width:70vw; height:auto; filter:drop-shadow(0 2px 6px rgba(0,0,0,.6)); }
+    h1 { margin:6px 0 4px; font-size:clamp(26px,4.5vw,38px); letter-spacing:.5px; }
+    .motto { margin:0; color:#bbb; font-style:italic; font-size:clamp(14px,3.5vw,18px); }
+    section { padding:24px 18px; }
+    .about { max-width:900px; margin:0 auto; text-align:center; background:#1a1a1a; border-radius:10px; padding:22px; }
+    .about p { color:#ccc; line-height:1.65; margin:10px 0; }
+    .contact { background:#1a1a1a; text-align:center; }
+    .contact a { color:var(--accent); text-decoration:none; }
+    .contact p { margin:8px 0; }
+    .gallery { display:flex; flex-wrap:wrap; gap:14px; justify-content:center; }
+    .gallery img { width:min(300px, 90vw); border-radius:10px; border:2px solid #444; box-shadow:0 6px 18px rgba(0,0,0,.45); }
+    form { max-width:500px; margin:0 auto; background:#1a1a1a; padding:20px; border-radius:10px; }
+    input, textarea, button { width:100%; padding:12px; margin:8px 0; border:none; border-radius:5px; font-size:16px; }
+    input, textarea { background:#222; color:#fff; }
+    button { background:var(--accent); color:#000; font-weight:bold; cursor:pointer; }
+    button:hover { opacity:0.85; }
+    footer { background:#000; text-align:center; padding:14px; color:#777; font-size:.95rem; }
+    .whatsapp-float { position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; box-shadow:0 4px 8px rgba(0,0,0,0.3); z-index:999; }
+    .whatsapp-float:hover { background:#1ebe5d; }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hai Ink</h1>
-    <p>"Ink with Serenity"</p>
+    <img src="hai-ink-logo.png" alt="Hai Ink Logo — Ink with Serenity" class="logo">
+    <h1>Hai Ink Tattoo Studio</h1>
+    <p class="motto">Ink with serenity</p>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about" class="section">
+  <section class="about">
     <h2>About Me</h2>
-    <p>Welcome to Hai Ink, where creativity meets precision. I'm Henry Armani Idieho, a passionate tattoo artist based in Auchi. With every design, I strive to bring out your story and identity through bold, meaningful ink.</p>
-    <p>A good tattoo artist understands not just art, but people. It’s about detail, trust, and connection — crafting pieces that last forever and feel personal.</p>
+    <p>
+      My name is Hai, and I'm a passionate tattoo artist based in Auchi. I specialize in clean, detailed linework and bold custom designs.
+      Tattooing is storytelling—every piece should reflect the personality, struggles, and triumphs of the person wearing it.
+      Whether it's your first tattoo or part of a full sleeve, I bring your vision to life with precision and heart.
+    </p>
+    <p style="font-style:italic; color:#aaa;">
+      A good tattoo artist is more than skilled with ink—patient, creative, and respectful of the stories clients carry.
+      Every line and shade should speak purpose, passion, and pride.
+    </p>
   </section>
 
-  <section id="gallery" class="section">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="tattoo1.jpeg" alt="Tattoo design 1">
-      <img src="tattoo2.jpeg" alt="Tattoo design 2">
-      <img src="tattoo3.jpeg" alt="Tattoo design 3">
-    </div>
+  <section class="gallery">
+    <h2 style="width:100%; text-align:center;">My Work</h2>
+    <img src="flash1.jpg" alt="Tattoo Flash 1">
+    <img src="flash2.jpg" alt="Tattoo Flash 2">
+    <img src="flash3.jpg" alt="Tattoo Flash 3">
   </section>
 
-  <section id="contact" class="section">
+  <section class="contact">
     <h2>Contact</h2>
-    <p>Location: Auchi</p>
-    <p>Email: <a href="mailto:idiehohenry@gmail.com" style="color:crimson;">idiehohenry@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/2347060903704" style="color:crimson;">07060903704</a></p>
-    <p>Call: <a href="tel:+2349151457877" style="color:crimson;">09151457877</a></p>
+    <p>WhatsApp: <a href="whatsapp://send?phone=2347060903704">07060903704</a></p>
+    <p>Call: <a href="tel:+2349151457877">09151457877</a></p>
+    <p>Email: <a href="mailto:idiehohenry@gmail.com">idiehohenry@gmail.com</a></p>
+    <p>
+      <a href="instagram://user?username=ink.hai" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i> @ink.hai
+      </a>
+    </p>
+    <p>Location: Auchi, Nigeria</p>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Book Now</h2>
+    <form action="mailto:idiehohenry@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Your Phone Number">
+      <textarea name="message" placeholder="Tell me about your tattoo idea..." rows="5" required></textarea>
+      <button type="submit">Send Request</button>
+    </form>
   </section>
 
   <footer>
-    &copy; 2025 Hai Ink — All rights reserved.<br>
-    CEO: Henry Armani Idieho
+    © 2025 Hai Ink. All rights reserved. · CEO: Henry Armani Idieho
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="whatsapp://send?phone=2347060903704" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
